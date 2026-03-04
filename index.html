@@ -197,6 +197,52 @@ Can you confirm where you are currently located?`,
 "Before we wrap up, is there anything else you’d like us to know about your experience, availability, or interest in the role?"
 ];
 
+// ================= ASSISTANT PROCUREMENT & CLIENT ORDER COORDINATOR =================
+const assistantProcurementQuestions = [
+`Assistant Procurement & Client Order Coordinator Role Overview:
+
+Quick overview of the role:
+
+In this role, your responsibilities will include:
+
+Assisting with supplier communication and price verification,
+Preparing and organizing client quotations,
+Drafting purchase orders for review,
+Tracking order status and following up with manufacturers,
+Maintaining accurate documentation of orders and communications,
+Supporting the Procurement & Client Order Coordinator,
+Ensuring all orders are processed accurately and within client specifications,
+Providing backup support when the main coordinator is unavailable.
+
+This is a fully remote position with structured training and workflow guidance.
+
+Can you confirm where you are currently located?`,
+
+"The starting compensation for this role is $30/hour. Does this align with your expectations?",
+"What type of schedule are you seeking — full-time, part-time, or flexible?",
+"Can you tell me about your professional background?",
+"What interested you in the Assistant Procurement & Client Order Coordinator role?",
+"Do you have experience working with suppliers, vendors, or coordinating orders?",
+"Have you ever prepared quotes, purchase orders, or tracked shipments?",
+"How do you ensure accuracy when handling pricing, quantities, and specifications?",
+"If a supplier delays an order unexpectedly, how would you handle the situation?",
+"If a client needs urgent clarification on pricing or delivery timelines, what steps would you take?",
+"Are you comfortable communicating professionally with manufacturers and business clients via email and phone?",
+"How do you handle situations where information from a supplier is incomplete or unclear?",
+"How do you stay organized when managing multiple orders at once?",
+"What tools or systems have you used to track orders or manage documentation? (Excel, Google Sheets, CRM, etc.)?",
+"Can you describe a time when you caught an error before it became a bigger issue?",
+"If the Procurement Coordinator is unavailable and a supplier needs immediate confirmation, how would you proceed?",
+"If you notice repeated discrepancies in pricing or documentation, what would you do?",
+"What would you do if you are unsure how to complete a procurement-related task?",
+"How do you maintain productivity while working remotely?",
+"How do you prioritize tasks when multiple orders require attention?",
+"How do you maintain professionalism and clarity in written communication?",
+"This role requires confidentiality when handling client pricing and supplier information. Are you comfortable maintaining strict confidentiality?",
+"Are you comfortable undergoing a background check if required?",
+"Before we wrap up, is there anything else you would like us to know about your experience or availability?"
+];
+
 // ================= OTHER ROLES REMAIN UNCHANGED =================
 // ... (rest of your roles remain exactly as in your original script)
 
@@ -222,6 +268,7 @@ function showQuestion(){
         <option value="Remote Administrative & Billing Assistant">Remote Administrative & Billing Assistant</option>
         <option value="Remote Personal Assistant">Remote Personal Assistant</option>
         <option value="Remote Community Support Coordinator">Remote Community Support Coordinator</option>
+		<option value="Remote Assistant Procurement & Client Order Coordinator">Remote Assistant Procurement & Client Order Coordinator</option>
         <option value="Remote Data Entry Clerk">Remote Data Entry Clerk</option>
         <option value="Remote Customer Service Representative">Remote Customer Service Representative</option>
         <option value="Remote Order Processor">Remote Order Processor</option>
@@ -255,6 +302,7 @@ function nextQuestion(){
     else if(answer === "Remote Administrative/Customer Operations Coordinator") selectedQuestions = adminOpsQuestions;
     else if(answer === "Delivery Driver") selectedQuestions = driverQuestions;
     else if(answer === "Remote Community Support Coordinator") selectedQuestions = communitySupportQuestions;
+	else if(answer === "Remote Assistant Procurement & Client Order Coordinator") selectedQuestions = assistantProcurementQuestions;
     else selectedQuestions = adminQuestions;
   }
 
